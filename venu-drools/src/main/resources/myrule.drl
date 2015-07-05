@@ -1,0 +1,9 @@
+package demo
+import com.venu.drools.Account
+rule "accountBalanceAtLeast"
+  when
+  $account : Account( balance < 100 )
+  then
+  System.out.println("Warning! money running out!");
+end
+	
